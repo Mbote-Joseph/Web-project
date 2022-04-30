@@ -1,0 +1,90 @@
+
+Tha famous page uses the json data that is defined in the Javascript file My.js which is an array of objects and the function is called when the page is loaded (onload)
+var famous = [
+        {
+          image: "images/img7.jpg",
+          title: "The ruins of Al Ula",
+          content:
+            "The old town of Al Ula is both historical and biblical.In Biblical Times, Al Ula was called “Dedan.” It is mentioned in Isaiah 21:13 as a home trade base of Arab caravans. Today, the old town of Al Ula is a ghost town. No one lives there anymore but there’s a new town that is settled not far from the old.When you think of old towns as a tourist attraction, you’d think of them as fully-renovated places restored for commercial purposes.",
+        },
+        {
+          image: "images/img6.jpg",
+          title: "Kaaba",
+          content:
+            "Once upon a time, a sanctuary in pre-Islamic times, the Kaaba is now a cubical structure, unlike the other religious structure. It is about 15 meters and doors made of gold. It is was added in 1982 and now with several modes of transportation, pilgrims have undertaken the pilgrimage.  The changes made to the structure and its mosque serve as a reminder of how often scared buildings are renovated and remolded over time.  It is a must visit place in Saudi Arabia.",
+        },
+        {
+          image: "images/img8.jpg",
+          title: "Masjid Al Rahmah",
+          content:
+            "Known to be one of the best Saudi Arabia attractions, Al Rahma Mosque is a spiritual site that invites thousands of devotees from every corner of the globe. The excellence of architecture even makes it the best attraction in Jeddah you can never miss. Famous by the name of a floating Mosque, Al Rahma Mosque is so built on pillars submerged underwater that the entire structure appears to be floating.",
+        },
+        {
+          image: "images/img9.jpg",
+          title: "Qaisariah Souq",
+          content:
+            "A traditional market that happens to be one of the oldest marketplaces to visit in the region, Qaisariah Souq was built from 1822 AD to 1238 AH and is one of the most popular places to visit in Al Hofuf. Be it local craft products, enchanting cafés, old Kout square, or the famous Ibrahim Castle, Qaisariah Souq is surrounded by many attractions today and offers a real treat to visitors.",
+        },
+        {
+          image: "images/img10.jpg",
+          title: "Al Masmak Fort",
+          content:
+            "Masmak Fort is among the most historically important sites in the city of Riyadh. “Masmak” means “strong,” and local legend suggests that if this fortress falls, the Kingdom will fall with it.",
+        },
+        {
+          image: "images/img23.jpg",
+          title: "Abraj Al-Bait Towers, Makkahr",
+          content:
+            "Located in Makkah, Abraj Al-Bait Towers is a government-owned complex, comprising seven magnificent skyscraper hotels. This building complex is situated in the vicinity of Masjid al-Haram and has a four-faced clock, which is known to be the highest in the world. I",
+        },
+      ];
+
+
+The gallery page also uses Json data that is an array of objects with the images and the titles.
+
+var gallery = [
+        {
+          image: "images/img7.jpg",
+          title: "The ruins of Al Ula",
+        },
+        {
+          image: "images/img6.jpg",
+          title: "Kaaba",
+        },
+        {
+          image: "images/img8.jpg",
+          title: "Masjid Al Rahmah",
+        },
+        {
+          image: "images/img9.jpg",
+          title: "Qaisariah Souq",
+        },
+        {
+          image: "images/img10.jpg",
+          title: "Al Masmak Fort",
+        },
+        {
+          image: "images/img23.jpg",
+          title: "Abraj Al-Bait Towers, Makkahr",
+        },
+      ];
+      
+      function process_gallery() {
+        var test1 = "";
+        for (var index in gallery) {
+          var data = famous[index];
+          test1 +=
+            "<div class='col-md-5 card'><img src=" +
+            data["image"] +
+            " alt='Avatar' style='width:100%; height: 300px;'><div class='container1'><h2><b>" +
+            data["title"] +
+            "</b></h2></div></div>";
+        }
+        $("#gallery").html(test1);
+      }
+
+The function is called when the gallery page is loaded.
+
+On the homepage the cookies is set if it is not currently there and is displayed to welcome the user.
+
+The screenshots are in the screenshots folder showing the structure of the pages(basic overview)

@@ -1,0 +1,87 @@
+.carousel_img {
+    object-fit: 100%;
+    height: 80vh !important;
+}
+
+.coursel_text {
+    padding: 10px;
+    background-color: black;
+
+}
+
+
+p{
+    margin-left: 20%;margin-right: 20%;
+    
+}
+
+#banner1
+{
+    overflow: hidden;
+    padding: 7em 0em 5em 0em;
+    background-image:url("../images/img4.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 580px;
+}
+#banner2 {
+    overflow: hidden;
+    padding: 7em 0em 5em 0em;
+    background-image:url("../images/img5.jpg");
+    background-size:100%;
+    width: 100%;
+    height: 780px;
+}
+.Contact{
+    background-color: green; color: white;
+  }
+  .card {
+    background-color: white;
+    padding: 1%;
+    margin-top: 1%;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    
+    float: left;
+    margin:1% 2%;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .container1 {
+    padding: 1% 5%;
+    text-align: center;
+  }
+@media only screen and (max-width: 1000px) {
+    #banner1 {
+        overflow: hidden;
+        padding: 7em 0em 5em 0em;
+        background-image:url("../images/img4.jpg");
+        background-size:100%;
+        width: 100%;
+        height: 250px;
+    }
+    p{
+        margin-left: 10%;margin-right: 10%;
+        
+    }
+    #banner2 {
+        overflow: hidden;
+        padding: 7em 0em 5em 0em;
+        background-image:url("../images/img5.jpg");
+        background-size:100%;
+        width: 100%;
+        height: 250px;
+    }
+    
+  }
+
+.h2{
+    margin-left: 20%;
+}
+
+.darkmode-toggle{
+  z-index: 100;
+}

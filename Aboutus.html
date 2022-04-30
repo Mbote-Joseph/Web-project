@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Culture in KSA</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <link href="styles/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+</head>
+
+
+
+<!-- ======= Hero Section ======= -->
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Culture in KSA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="Famous.html">Famous</a>
+          <a class="nav-link" href="Traditions.html">Traditions</a>
+          <a class="nav-link" href="Gallery.html">Gallery</a>
+          <a class="nav-link active" href="Aboutus.html">About</a>
+          <a class="nav-link" href="Contact.html">Contact</a>
+          <button type="button" class="btn btn-primary" onclick="decreasesize()">-</button>
+          <button type="button" class="btn btn-primary" onclick="increasesize()" style="margin-left: 2%;">+</button>
+
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <a class="weatherwidget-io" href="https://forecast7.com/en/24d4554d38/abu-dhabi/" data-label_1="ABU DHABI" data-label_2="WEATHER" data-theme="original" >ABU DHABI WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up">
+
+
+      <h1 style="text-align: center;">Culture in KSA</h1>
+    </div>
+
+  </section>
+  <div id="banner1" class="carousel-inner">
+    <div class="container">
+    </div>
+  </div>
+  <ul class="Breadcrumbs">
+    <nav aria-label="breadcrumb " style="font-size: 3rem;">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">About Us</li>
+      </ol>
+    </nav>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
+        <li class="breadcrumb-item"><a href="#">About Us</a></li>
+
+      </ol>
+
+  </ul>
+  </nav>
+  <div>
+
+    <h2 class="section-heading animated" data-animation="bounceInUp" style="text-align: center;"><b>About KSA</b></h2>
+
+    <p>
+      <span id="culture_text">
+      </span>
+    <ul style="margin-left: 20%;margin-right: 20%;">
+      <li>Depth of its civilization that dates back to more than one million years, which is confirmed by the
+        archaeological evidence and the heritage prevalent in this country.</li>
+      <li>Depth of its civilization that dates back to more than one million years, which is confirmed by the
+        archaeological evidence and the heritage prevalent in this country.</li>
+      <li>It was the land of many kingdoms and states that prevailed in the evolution of human civilization.</li>
+      <li>Its distinguished geographical location made it a point of intersection of international trade routes through
+        all the ages.</li>
+    </ul>
+    </p>
+  </div>
+
+  <div class="copyright" style="background-color:whitesmoke ;width: 100%;">
+    <p style="text-align: center;">&copy; Untitled. All rights reserved </a></p>
+  </div>
+  <script src="JS/My.js"></script>
+
+  <script>
+
+    let culture_text = document.getElementById("culture_text");
+    function loadXMLDoc() {
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          console.log(this);
+          culture_text.innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "content.txt", true);
+      xhttp.send();
+    }
+
+    loadXMLDoc();
+  </script>
+</body>
+
+</html>

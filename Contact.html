@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Culture in KSA</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+    <link href="styles/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Culture in KSA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="Famous.html">Famous</a>
+                    <a class="nav-link" href="Traditions.html">Traditions</a>
+                    <a class="nav-link" href="Gallery.html">Gallery</a>
+                    <a class="nav-link " href="Aboutus.html">About</a>
+                    <a class="nav-link active" href="Contact.html">Contact</a>
+
+                    <button type="button" class="btn btn-primary" onclick="decreasesize()">-</button>
+                    <button type="button" class="btn btn-primary" onclick="increasesize()"
+                        style="margin-left: 2%;">+</button>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="hero-container" data-aos="fade-up">
+
+
+            <h1 style="text-align: center;">Culture in KSA</h1>
+        </div>
+
+    </section>
+    <div id="banner2" class="carousel-inner">
+        <div class="container">
+        </div>
+    </div>
+    <ul class="Breadcrumbs">
+        <nav aria-label="breadcrumb " style="font-size: 3rem;">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+            </ol>
+        </nav>
+        
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">HOME</a></li>
+                <li class="breadcrumb-item"><a href="#">Contact Us</a></li>
+            </ol>
+        </nav>
+
+    </ul>
+    <iframe src="https://wonderopolis.org/widget" width="360" height="730" frameborder="0"></iframe>
+    <form action="mailto:qazi.usama.kashif@gmail.com" class="form is-validated" method=”POST”>
+        <div class="form-row" style="margin-left: 30%; margin-right: 20%;">
+            <div class="col-md-8 Contact" style="text-align: center;">
+                <label for="FName" class="fcf-label has-text-weight-normal">First Name</label>
+                <input type="text" class="form-control" placeholder="First Name..." name="FName" id="FName"
+                    maxlength="60" data-validate-field="FName" required>
+                <label for="LName" class="fcf-label has-text-weight-normal">Last Name</label>
+                <input type="text" class="form-control" placeholder="Last Name..." name="LName" id="LName"
+                    maxlength="60" data-validate-field="LName" required>
+                <label for="Email" class="fcf-label has-text-weight-normal">Email</label>
+                <input type="email" name="Email" id="Email" class="form-control" maxlength="80"
+                    data-validate-field="Email" placeholder="Email..." required>
+                <label for="Message" class="fcf-label has-text-weight-normal">Your message</label><br>
+                <textarea style="width: 100%;" name="Message" id="Message" class="form-control" maxlength="1000"
+                    rows="6" data-validate-field="Message" placeholder="Message..." required></textarea>
+                <hr />
+                <h3>Optional</h3>
+                <label>Nationality:</label><br>
+                <select required id="stateselect" class="form-control" style="text-align: center;">
+                    <option>----------------------------------</option>
+                    <option value="uae">United Arab Emarite</option>
+                    <option value="ksa">Saudi Arabia</option>
+                    <option value="kw">kuwait</option>
+                    <option value="QA">Qatar</option>
+                </select>
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="m"><label>Male</label>
+                <input type="radio" name="gender" value="f"><label>Female</label>
+                <label>How do you want to be conacted? </label> <br>
+                <input type="checkbox" name="contact{}" value="email"><label>E-mail</label><br>
+                <input type="checkbox" name="contact{}" value="phone"><label>phone </label><br>
+                <button type="submit" id="submitbtn" value="Submit" class="btn btn-primary">Submit</button>
+                <button type="reset" value="reset" class="btn btn-danger">Reset</button>
+            </div>
+        </div>
+    </form><br><br>
+    <div style="margin-left: 20%; margin-right: 20%;">
+   <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+   </div>
+   
+    <div class="copyright" style="background-color:whitesmoke ;width: 100%;">
+        <p style="text-align: center;">&copy; Untitled. All rights reserved </a></p>
+    </div>
+    <script src="JS/My.js"></script>
+    <script>
+        let FName = document.getElementById("FName");
+        let LName = document.getElementById("LName");
+        let email = document.getElementById("Email");
+        let Message = document.getElementById("Message");
+        let stateselect = document.getElementById("stateselect");
+        let state;
+        let submitbtn = document.getElementById("submitbtn");
+
+        stateselect.addEventListener("change", (e) => {
+            state = e.target.value;
+        })
+
+        submitbtn.addEventListener("click", () => {
+            if (!FName.value) {
+                alert("Enter you First Name");
+            } else if (!LName.value) {
+                alert("Enter you Last Name");
+            } else if (!email.value) {
+                alert("Enter you Email Address Name");
+            } else if (!Message.value) {
+                alert("Message field cannot be empty");
+            }
+        });
+    </script>
+</body>
+
+</html>
